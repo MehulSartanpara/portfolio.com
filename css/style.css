@@ -108,9 +108,7 @@ p{
     background-color: var(--body-font-color);
     display: block;
     margin-right: 7px;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s;
+    transition: all 0.3s ease;
 }
 .portfolio-content-left .portfolio-cta:hover .portfolio-nav-line,
 .portfolio-content-left .portfolio-cta.active .portfolio-nav-line{
@@ -277,4 +275,14 @@ section{
     gap: 10px;
     margin-top: 15px;
 }
-
+.portfolio-experience-card-left .portfolio-project-image{
+    display: block;
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    margin-bottom: 3px;
+}
+.portfolio-experience-list-card:hover .portfolio-project-image{
+    border-color: rgba(226,232,240,.1);
+}
