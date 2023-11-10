@@ -286,3 +286,52 @@ section{
 .portfolio-experience-list-card:hover .portfolio-project-image{
     border-color: rgba(226,232,240,.1);
 }
+.portfolio-contact-form {
+    margin-top: 40px;
+}
+.portfolio-contact-form h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.portfolio-contact-form-section .contact-input {
+    font-family: var(--font-family);
+    color: var(--body-font-color);
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 3px;
+    line-height: normal;
+    background-color: transparent;
+    border: 1px solid var(--body-font-color);
+    transition: all 0.3s ease;
+    padding: 10px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+.portfolio-contact-form-section  .contact-input:focus{ 
+    border: 1px solid var(--heading-font-color);
+}
+.portfolio-contact-form-section textarea{
+    height: 80px;
+    resize:vertical;
+}
+.portfolio-contact-form-section button{
+    font-family: var(--font-family);
+    color: var(--body-font-color);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid var(--body-font-color);
+    padding: 10px;
+}
+.portfolio-contact-form-section button:hover { 
+    border: 1px solid var(--heading-font-color);
+    color: #000;
+    background-color: var(--heading-font-color);
+}

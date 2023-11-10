@@ -614,6 +614,15 @@
                                     I'm confident that my skills and experience align perfectly with your requirements, 
                                     and I'm dedicated to delivering outstanding results.
                                 </p>
+                                <div class="portfolio-contact-form">
+                                    <h3>Get in Touch</h3>
+                                    <div class="contact-form">      
+                                        <input name="name" type="text" class="contact-input contact-name" placeholder="Your Name"/>   
+                                        <input name="email" type="text" class="contact-input contact-email" placeholder="Your Email"/>
+                                        <textarea name="text" class="contact-input contact-message" placeholder="Your Message"></textarea>
+                                        <button onclick="sendMail()" value="Send Email">Send Email</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -622,6 +631,13 @@
         </div>
     </div>
     
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('OhZIJMLJEdywdyM8k');
+        })();
+    </script>
     <script async src="./js/jquery.min.js"></script>
     <script defer src="./js/custom.js"></script>
 </body>
