@@ -378,7 +378,108 @@ footer{
 #footer {
     margin: 0;
 }
-#footer .thank-you{
+#footer .thank-you {
     text-align: center;
     text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+}
+
+.portfolio-section-mobile-heading {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -.015em;
+    color: rgb(226 232 240/1);
+    padding: 16px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(15,23,42,.75);
+    backdrop-filter: blur(8px);
+    display: none;
+}
+
+@media(max-width: 900px) {
+    .portfolio-content,
+    .portfolio-content-left-inner {
+        display: block;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    .portfolio-content-left .portfolio-nav-bar {
+        display: none;
+    }
+    .portfolio-content-left {
+        position: inherit;
+        max-height: inherit;
+        width: 100%;
+    }
+    .portfolio-content-right {
+        width: 100%;
+    }
+    /* .portfolio-card-hover {
+        z-index: 1;
+        opacity: 1;
+        visibility: visible;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+    } */
+    .portfolio-section-mobile-heading {
+        display: block;
+    }
+}
+@media(max-width: 600px) {
+    .portfolio-experience-card-left,
+    .portfolio-experience-card-right {
+        width: 100%;
+    }
+    #experience .portfolio-experience-list-card {
+        gap: 3px;
+    }
+    #projects .portfolio-experience-list-card {
+        flex-direction: column-reverse;
+    }
+    .portfolio-experience-card-left {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    .portfolio-experience-card-left .portfolio-project-image {
+        width: calc(50% - 7px);
+        margin: 0;
+    }
+    .portfolio-content-left-inner {
+        padding-top: 5px;
+    }
+    section, footer{
+        scroll-margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .portfolio-social svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+@media(max-width: 480px) {
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 19px;
+        margin-top: 0.3rem;
+    }
+}
+@media(max-width: 380px) {
+    h1 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 16px;
+    }
 }
