@@ -104,6 +104,9 @@ p{
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+.portfolio-content-left .portfolio-top-info p{
+    max-width: 400px;
+}
 .portfolio-content-left .portfolio-nav-bar{
     margin-top: 70px;
 }
@@ -421,15 +424,35 @@ footer{
     .portfolio-content-right {
         width: 100%;
     }
-    /* .portfolio-card-hover {
-        z-index: 1;
-        opacity: 1;
-        visibility: visible;
-        top: -10px;
-        left: -10px;
-        right: -10px;
-        bottom: -10px;
-    } */
+    .portfolio-experience-list-card {
+        background-color: var(--body-bg);
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+    .portfolio-experience-list-card:before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        border: 2px solid transparent;
+        border-radius: 3px;
+        background: conic-gradient(from var(--ang, 90deg) at -5% -15%, #e576ad, #34c7f4, #6ec48c, #956eaf, #faf599, #e576ad) border-box;
+        -webkit-animation: rotate 20s linear infinite;
+        animation: rotate 20s linear infinite;
+        z-index: -1;
+    }
+    @property --ang {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    @keyframes rotate {
+        0% {
+          --ang: 0deg;
+        }
+        100% {
+          --ang: 360deg;
+        }
+    }
     .portfolio-section-mobile-heading {
         display: block;
     }
@@ -438,6 +461,10 @@ footer{
     .portfolio-experience-card-left,
     .portfolio-experience-card-right {
         width: 100%;
+    }
+    .portfolio-content-right {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
     #experience .portfolio-experience-list-card {
         gap: 3px;
